@@ -1,0 +1,188 @@
+.gastro-runner__header {
+  width: 100%;
+  float: left;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/fons/gastro-runner--1.png");
+  height: 600px;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+.gastro-runner__header--logo {
+  float: left;
+  width: 119px;
+}
+
+.gastro-runner__header--mail {
+  float: right;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 36px;
+  &:hover {
+    color: #fff;
+  }
+  .circle-icon {
+    border-radius: 50%;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background-color: $dark;
+    float: left;
+    text-align: center;
+    margin-right: 10px;
+  }
+  i {
+    color: #ffd93a;
+    font-size: 13px;
+    position: relative;
+    z-index: 10;
+    top: -1px;
+  }
+}
+
+.gastro-runner__header--title {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin: 150px 0 50px;
+  font-size: 44px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  span {
+    color: $yellow;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    background-color: $yellow;
+    left: 0;
+    bottom: -30px;
+    width: 51px;
+    height: 3px;
+  }
+}
+
+.gastro-runner__header--text {
+  width: 100%;
+  float: left;
+  margin: 0;
+  text-align: left;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.gastro-runner__header--button {
+  float: left;
+  margin-top: 25px;
+  @include btn--yellow;
+}
+
+/*gastro-runner__advantages*/
+
+.gastro-runner__advantages {
+  width: 100%;
+  float: left;
+  position: relative;
+  background-color: $light-white;
+  text-align: center;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flex;
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 95px 0;
+  box-sizing: border-box;
+  &--item {
+    width: 20%;
+    display: inline-block;
+    margin: 0 50px;
+    &-thumb {
+      margin: 0 auto 20px;
+      display: inline-block;
+    }
+    &-title,
+    &-text {
+      width: 100%;
+      float: left;
+      font-size: 16px;
+      font-weight: 300;
+      color: $dark;
+    }
+    &-title {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/*gastro-runner__advantages*/
+
+/*gastro-runner__speed*/
+
+.gastro-runner__speed {
+  padding: 95px 0 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  height: 560px;
+  &--title {
+    width: 100%;
+    float: left;
+    color: $dark;
+    font-size: 37px;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -20px;
+      width: 51px;
+      height: 3px;
+      background-color: $yellow;
+    }
+  }
+  &--list {
+    width: 34%;
+    margin: 60px 0 0;
+    padding: 0 0 0 40px;
+    float: left;
+    position: relative;
+    li {
+      width: 100%;
+      float: left;
+      text-align: left;
+      list-style-type: none;
+      font-size: 16px;
+      font-weight: 300;
+      color: $dark;
+      line-height: 24px;
+      position: relative;
+      margin: 13px 0;
+      &:before {
+        content: "";
+        background-image: url("../img/icons/list-dot--icon.png");
+        width: 25px;
+        height: 25px;
+        display: block;
+        position: absolute;
+        left: -40px;
+      }
+    }
+  }
+  &--pic {
+    position: absolute;
+    right: 0;
+    width: 347px;
+    margin-top: 12px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/*gastro-runner__speed*/

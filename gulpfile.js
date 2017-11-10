@@ -34,7 +34,7 @@ var postcss = require('gulp-postcss'),//Блиотека-парсер стиле
     fixes = require('postcss-fixes');
 
 let pages = [
-  'app/pug/pages/index/index.pug',
+  'app/pug/pages/gastro-runner/gastro-runner.pug',
 
 
 ];

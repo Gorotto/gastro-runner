@@ -1,0 +1,391 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Open Sans Light Italic"), local(OpenSans-LightItalic), url(//fonts.gstatic.com/s/opensans/v14/PRmiXeptR36kaC0GEAetxrXcjzEax2LfQAlK8DdMzhA.eot?#) format("eot"), url(//fonts.gstatic.com/s/opensans/v14/PRmiXeptR36kaC0GEAetxko2lTMeWA_kmIyWrkNCwPc.woff2) format("woff2"), url(//fonts.gstatic.com/s/opensans/v14/PRmiXeptR36kaC0GEAetxh_xHqYgAV9Bl_ZQbYUxnQU.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Open Sans Italic"), local(OpenSans-Italic), url(//fonts.gstatic.com/s/opensans/v14/xjAJXh38I15wypJXxuGMBmfQcKutQXcIrRfyR5jdjY8.eot?#) format("eot"), url(//fonts.gstatic.com/s/opensans/v14/xjAJXh38I15wypJXxuGMBo4P5ICox8Kq3LLUNMylGO4.woff2) format("woff2"), url(//fonts.gstatic.com/s/opensans/v14/xjAJXh38I15wypJXxuGMBobN6UDyHWBl620a-IRfuBk.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: local("Open Sans SemiBold Italic"), local(OpenSans-SemiBoldItalic), url(//fonts.gstatic.com/s/opensans/v14/PRmiXeptR36kaC0GEAetxo8mkAiYpFywqG2RvpzBnTU.eot?#) format("eot"), url(//fonts.gstatic.com/s/opensans/v14/PRmiXeptR36kaC0GEAetxl2umOyRU7PgRiv8DXcgJjk.woff2) format("woff2"), url(//fonts.gstatic.com/s/opensans/v14/PRmiXeptR36kaC0GEAetxn5HxGBcBvicCpTp6spHfNo.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Open Sans Bold Italic"), local(OpenSans-BoldItalic), url(//fonts.gstatic.com/s/opensans/v14/PRmiXeptR36kaC0GEAetxrFt29aCHKT7otDW9l62Aag.eot?#) format("eot"), url(//fonts.gstatic.com/s/opensans/v14/PRmiXeptR36kaC0GEAetxolIZu-HDpmDIZMigmsroc4.woff2) format("woff2"), url(//fonts.gstatic.com/s/opensans/v14/PRmiXeptR36kaC0GEAetxjqR_3kx9_hJXbbyU8S6IN0.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 800;
+  src: local("Open Sans ExtraBold Italic"), local(OpenSans-ExtraBoldItalic), url(//fonts.gstatic.com/s/opensans/v14/PRmiXeptR36kaC0GEAetxphT2rkLFFMVLymfgfmWVtI.eot?#) format("eot"), url(//fonts.gstatic.com/s/opensans/v14/PRmiXeptR36kaC0GEAetxnibbpXgLHK_uTT48UMyjSM.woff2) format("woff2"), url(//fonts.gstatic.com/s/opensans/v14/PRmiXeptR36kaC0GEAetxkCDe67GEgBv_HnyvHTfdew.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local(OpenSans-Light), url(//fonts.gstatic.com/s/opensans/v14/DXI1ORHCpsQm3Vp6mXoaTXZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"), url(//fonts.gstatic.com/s/opensans/v14/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format("woff2"), url(//fonts.gstatic.com/s/opensans/v14/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local(OpenSans-Regular), url(//fonts.gstatic.com/s/opensans/v14/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot?#) format("eot"), url(//fonts.gstatic.com/s/opensans/v14/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format("woff2"), url(//fonts.gstatic.com/s/opensans/v14/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans SemiBold"), local(OpenSans-SemiBold), url(//fonts.gstatic.com/s/opensans/v14/MTP_ySUJH_bn48VBG8sNSnZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"), url(//fonts.gstatic.com/s/opensans/v14/MTP_ySUJH_bn48VBG8sNSugdm0LZdjqr5-oayXSOefg.woff2) format("woff2"), url(//fonts.gstatic.com/s/opensans/v14/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local(OpenSans-Bold), url(//fonts.gstatic.com/s/opensans/v14/k3k702ZOKiLJc3WVjuplzHZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"), url(//fonts.gstatic.com/s/opensans/v14/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format("woff2"), url(//fonts.gstatic.com/s/opensans/v14/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Open Sans ExtraBold"), local(OpenSans-ExtraBold), url(//fonts.gstatic.com/s/opensans/v14/EInbV5DfGHOiMmvb1Xr-hnZ2MAKAc2x4R1uOSeegc5U.eot?#) format("eot"), url(//fonts.gstatic.com/s/opensans/v14/EInbV5DfGHOiMmvb1Xr-hugdm0LZdjqr5-oayXSOefg.woff2) format("woff2"), url(//fonts.gstatic.com/s/opensans/v14/EInbV5DfGHOiMmvb1Xr-hnhCUOGz7vYGh680lGh-uXM.woff) format("woff");
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  text-align: left;
+  vertical-align: baseline;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+input:hover,
+input:focus,
+input:active {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+
+textarea:hover,
+textarea:focus,
+textarea:active {
+  outline: none;
+}
+
+.container {
+  *zoom: 1;
+}
+
+.container:after {
+  content: '';
+  display: table;
+  line-height: 0;
+  clear: both;
+}
+
+.container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 766px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 990px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+section {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.gastro-runner__header {
+  width: 100%;
+  float: left;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/fons/gastro-runner--1.png");
+  height: 600px;
+  padding-top: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.gastro-runner__header--logo {
+  float: left;
+  width: 119px;
+}
+
+.gastro-runner__header--mail {
+  float: right;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 36px;
+}
+
+.gastro-runner__header--mail:hover {
+  color: #fff;
+}
+
+.gastro-runner__header--mail .circle-icon {
+  border-radius: 50%;
+  position: relative;
+  width: 36px;
+  height: 36px;
+  background-color: #222;
+  float: left;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.gastro-runner__header--mail i {
+  color: #ffd93a;
+  font-size: 13px;
+  position: relative;
+  z-index: 10;
+  top: -1px;
+}
+
+.gastro-runner__header--title {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin: 150px 0 50px;
+  font-size: 44px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.gastro-runner__header--title span {
+  color: #f2b71b;
+}
+
+.gastro-runner__header--title:after {
+  content: "";
+  position: absolute;
+  background-color: #f2b71b;
+  left: 0;
+  bottom: -30px;
+  width: 51px;
+  height: 3px;
+}
+
+.gastro-runner__header--text {
+  width: 100%;
+  float: left;
+  margin: 0;
+  text-align: left;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.gastro-runner__header--button {
+  float: left;
+  margin-top: 25px;
+  min-width: 210px;
+  height: 56px;
+  background-color: #f2b71b;
+  border-radius: 3px;
+  color: #222;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 56px;
+  cursor: pointer;
+}
+
+.gastro-runner__header--button:hover {
+  background-color: #d69b00;
+  color: #222;
+}
+
+/*gastro-runner__advantages*/
+.gastro-runner__advantages {
+  width: 100%;
+  float: left;
+  position: relative;
+  background-color: #fafafa;
+  text-align: center;
+  display: -ms-inline-flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 95px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.gastro-runner__advantages--item {
+  width: 20%;
+  display: inline-block;
+  margin: 0 50px;
+}
+
+.gastro-runner__advantages--item-thumb {
+  margin: 0 auto 20px;
+  display: inline-block;
+}
+
+.gastro-runner__advantages--item-title,
+.gastro-runner__advantages--item-text {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  font-weight: 300;
+  color: #222;
+}
+
+.gastro-runner__advantages--item-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/*gastro-runner__advantages*/
+/*gastro-runner__speed*/
+.gastro-runner__speed {
+  padding: 95px 0 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fff;
+  height: 560px;
+}
+
+.gastro-runner__speed--title {
+  width: 100%;
+  float: left;
+  color: #222;
+  font-size: 37px;
+  font-weight: 700;
+  margin: 0;
+  position: relative;
+}
+
+.gastro-runner__speed--title:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 51px;
+  height: 3px;
+  background-color: #f2b71b;
+}
+
+.gastro-runner__speed--list {
+  width: 34%;
+  margin: 60px 0 0;
+  padding: 0 0 0 40px;
+  float: left;
+  position: relative;
+}
+
+.gastro-runner__speed--list li {
+  width: 100%;
+  float: left;
+  text-align: left;
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 300;
+  color: #222;
+  line-height: 24px;
+  position: relative;
+  margin: 13px 0;
+}
+
+.gastro-runner__speed--list li:before {
+  content: "";
+  background-image: url("../img/icons/list-dot--icon.png");
+  width: 25px;
+  height: 25px;
+  display: block;
+  position: absolute;
+  left: -40px;
+}
+
+.gastro-runner__speed--pic {
+  position: absolute;
+  right: 0;
+  width: 347px;
+  margin-top: 12px;
+}
+
+.gastro-runner__speed--pic img {
+  width: 100%;
+}
+
+/*gastro-runner__speed*/
+
+/*# sourceMappingURL=styles.css.map */

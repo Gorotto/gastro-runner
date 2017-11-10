@@ -1,0 +1,31 @@
+$yellow: #f2b71b;
+$blue: #00a8d7;
+$dark-white: #f3f3f3;
+$light-white: #fafafa;
+$dark: #222;
+$light-dark: #272a2e;
+
+
+@mixin btn--yellow {
+  min-width: 210px;
+  height: 56px;
+  background-color: #f2b71b;
+  border-radius: 3px;
+  color: $dark;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 56px;
+  cursor: pointer;
+  &:hover {
+    background-color: #d69b00;
+    color: $dark;
+  }
+}
+
+
+section {
+  width: 100%;
+  float: left;
+  position: relative;
+}
