@@ -35,6 +35,12 @@ var postcss = require('gulp-postcss'),//Блиотека-парсер стиле
 
 let pages = [
   'app/pug/pages/gastro-runner/gastro-runner.pug',
+  'app/pug/pages/earnings-gastro/earnings-gastro.pug',
+  'app/pug/pages/upload-card/upload-card--front.pug',
+  'app/pug/pages/upload-card/upload-card--back.pug',
+  'app/pug/pages/cooperation/cooperation.pug',
+  'app/pug/pages/enter--admin/enter--admin.pug',
+  'app/pug/pages/register/register.pug',
 
 
 ];

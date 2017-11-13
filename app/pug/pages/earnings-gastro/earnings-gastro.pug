@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Предмет
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="css/libs.min.css")
+    link(rel="stylesheet", href="css/styles.css")
+
+  body
+    section.earnings-gastro__header
+      .container
+        .gastro-runner__header--logo
+          img(src="img/logo.png")
+        a(href="mailto:office@gastrotochka.com").gastro-runner__header--mail
+          span.circle-icon
+            i.fa.fa-envelope-o(aria-hidden='true')
+          | office@gastrotochka.com
+        .earnings-gastro__header--content
+          h1.earnings-gastro__header--title
+            | Зарабатывайте 
+            br
+            | когда вам удобно
+            br
+            | с 
+            span Gastro Runner
+            
+    section.gastro-runner__advantages.earnings-gastro__advantages
+      .container
+        .gastro-runner__advantages--item
+          .gastro-runner__advantages--item-thumb
+            img(src="img/icons/yellow-1--icon.png")
+          span.gastro-runner__advantages--item-title Стабильный доход
+          p.gastro-runner__advantages--item-text Вы можете зарабатывать сколько считаете нужным
+        .gastro-runner__advantages--item
+          .gastro-runner__advantages--item-thumb
+            img(src="img/icons/yellow-2--icon.png")
+          span.gastro-runner__advantages--item-title Свобода от офиса
+          p.gastro-runner__advantages--item-text Отсутствие планов продаж или зависимость от начальников
+        .gastro-runner__advantages--item
+          .gastro-runner__advantages--item-thumb
+            img(src="img/icons/yellow-3--icon.png")
+          span.gastro-runner__advantages--item-title Гибкий график
+          p.gastro-runner__advantages--item-text Вы сами решаете когда вам выйти на работу
+        .gastro-runner__advantages--item
+          .gastro-runner__advantages--item-thumb
+            img(src="img/icons/yellow-4--icon.png")
+          span.gastro-runner__advantages--item-title Транспорт
+          p.gastro-runner__advantages--item-text Для работы курьером вы можете работать на автомобиле, скутере, велосипеде или других средствах передвижения
+    include ../faq
+    section.gastro-runner__footer
+      .container
+        .gastro-runner__header--logo
+          img(src="img/logo.png")
+        p.gastro-runner__footer--copyright Gastro Runner © 2017
+        a(href="mailto:office@gastrotochka.com").gastro-runner__header--mail
+          span.circle-icon
+            i.fa.fa-envelope-o(aria-hidden='true')
+          | office@gastrotochka.com
+    script(src='js/jquery-2.1.3.min.js') 
+    script(src="js/jquery.mousewheel.js") 
+    script(src="js/script.js")

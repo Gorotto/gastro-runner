@@ -1,0 +1,121 @@
+.cooperation {
+  text-align: center;
+  padding: 70px 0;
+  box-sizing: border-box;
+  &__link {
+    margin: 0 auto 45px;
+    display: inline-block;
+    float: none;
+    width: 210px;
+    height: 50px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 50px;
+    color: $dark;
+    &:hover {
+      background-color: $dark;
+      color: #fff;
+    }
+  }
+  &__content {
+    width: 1027px;
+    margin: 70px auto 0;
+    display: inline-block;
+    float: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    &--item {
+      width: 284px;
+      height: 264px;
+      border: 1px solid #e5e5e5;
+      border-radius: 5px;
+      display: inline-block;
+      padding: 35px;
+      box-sizing: border-box;
+      float: none;
+      display: inline-block;
+      margin: 0 1% 45px;
+      position: relative;
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      &:hover {
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        border: 1px solid #ffd93a;
+        .cooperation__content--link {
+          background-color: #ffd93a;
+          color: $dark;
+        }
+      }
+    }
+    &--title {
+      width: 100%;
+      float: left;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 700;
+      color: $dark;
+    }
+    &--list {
+      width: 100%;
+      float: left;
+      position: relative;
+      margin: 0;
+      padding: 0 0 0 20px;
+      li {
+        width: 100%;
+        display: inline-block;
+        list-style-type: none;
+        position: relative;
+        font-size: 14px;
+        color: $dark;
+        text-align: left;
+        margin-top: 20px;
+        &:before {
+          content: "";
+          background-image: url("../img/icons/check--yellow.png");
+          width: 11px;
+          height: 9px;
+          position: absolute;
+          left: -20px;
+          top: 5px;
+        }
+      }
+    }
+    &--link {
+      border-radius: 5px;
+      min-width: 210px;
+      background-color: #e5e5e5;
+      display: inline-block;
+      height: 50px;
+      line-height: 50px;
+      color: #9d9d9d;
+      font-size: 16px;
+      font-weight: 700;
+      position: absolute;
+      bottom: 35px;
+      left: 35px;
+    }
+
+  }
+  h3 {
+    width: 100%;
+    margin: 0;
+    float: left;
+    font-size: 22px;
+    font-weight: 300;
+    color: $dark;
+    padding: 45px;
+    box-sizing: border-box;
+    span {
+      font-weight: 700;
+    }
+  }
+}

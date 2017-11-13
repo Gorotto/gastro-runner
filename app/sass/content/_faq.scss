@@ -1,0 +1,135 @@
+.faq {
+  width: 100%;
+  float: left;
+  background-color: $light-white;
+  padding: 95px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  &--title {
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: $dark;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    &:after {
+      content: "";
+      width: 51px;
+      height: 3px;
+      background-color: $yellow;
+      position: absolute;
+      left: calc(50% - (51px/2));
+      bottom: -20px;
+    }
+  }
+}
+
+.faq__wrap {
+  width: 73%;
+  margin: 50px auto 0;
+  float: none;
+  display: inline-block;
+  @include breakpoint(max-width 500px) {
+    width: 100%;
+  }
+}
+.faq__item {
+  width: 100%;
+  margin-bottom: 25px;
+  float: left;
+}
+
+.faq__item--title {
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.faq__item--title-number {
+  width: 30px;
+  height: 30px;
+  background-color: $yellow;
+  float: left;
+  border-radius: 50%;
+  text-align: center;
+  color: $dark;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.faq__item--title-text {
+  color: #222;
+  float: left;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  padding-left: 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: -webkit-calc(100% - 80px);
+  width: calc(100% - 80px);
+  margin: 0;
+}
+
+.faq__item--hide {
+  display: none;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  float: left;
+  margin-top: 25px;
+  padding: 35px 45px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+
+.faq__item--hide-text {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #222;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 20px 0 0;
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.chevron-icon {
+  width: 29px;
+  height: 29px;
+  border: 1px solid gainsboro;
+  border-radius: 50%;
+  float: right;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  i {
+    font-size: 12px;
+    position: relative;
+    top: 1px;
+  }
+}
+
+.chevron-icon--rotate {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}

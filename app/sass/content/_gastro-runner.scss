@@ -81,7 +81,7 @@
   @include btn--yellow;
 }
 
-/*gastro-runner__advantages*/
+/*gastro-runner__advantages & earnings-gastro__advantages*/
 
 .gastro-runner__advantages {
   width: 100%;
@@ -96,10 +96,26 @@
   justify-content: center;
   padding: 95px 0;
   box-sizing: border-box;
+  @include breakpoint(max-width 740px) {
+    padding: 40px 0;
+    box-sizing: border-box;
+  }
   &--item {
     width: 20%;
     display: inline-block;
     margin: 0 50px;
+    @include breakpoint(max-width 1025px) {
+      width: 33%;
+      margin: 0;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    @include breakpoint(max-width 740px) {
+      width: 100%;
+      margin: 20px 0;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
     &-thumb {
       margin: 0 auto 20px;
       display: inline-block;
@@ -116,6 +132,16 @@
       font-weight: 700;
       margin-bottom: 10px;
     }
+  }
+}
+
+.earnings-gastro__advantages {
+  background-color: #fff;
+  .gastro-runner__advantages--item {
+    width: 24%;
+    margin: 0;
+    padding: 0 1%;
+    box-sizing: border-box;
   }
 }
 
@@ -152,6 +178,9 @@
     padding: 0 0 0 40px;
     float: left;
     position: relative;
+    @include breakpoint(max-width 740px) {
+      width: 90%;
+    }
     li {
       width: 100%;
       float: left;
@@ -179,6 +208,9 @@
     right: 0;
     width: 347px;
     margin-top: 12px;
+    @include breakpoint(max-width 740px) {
+      display: none;
+    }
     img {
       width: 100%;
     }
@@ -186,3 +218,144 @@
 }
 
 /*gastro-runner__speed*/
+
+/*gastro-runner__flexibility*/
+
+.gastro-runner__flexibility {
+  background-image: url("../img/fons/flexibility--fon.png");
+  height: 625px;
+  background-size: cover;
+  padding: 95px 0;
+  box-sizing: border-box;
+  text-align: center;
+  &--content {
+    width: 100%;
+    float: left;
+    margin: 110px 0 90px;
+  }
+  &--title {
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    &:after {
+      content: "";
+      width: 51px;
+      height: 3px;
+      background-color: $yellow;
+      position: absolute;
+      left: calc(50% - (51px/2));
+      bottom: -20px;
+    }
+  }
+  &--item {
+    width: 20%;
+    display: inline-block;
+    float: none;
+    text-align: center;
+    @include breakpoint(max-width 500px) {
+      width: 49%;
+    }
+    &-thumb {
+      float: none;
+      display: inline-block;
+      margin: 0 auto;
+    }
+    &-text {
+      width: 100%;
+      float: left;
+      position: relative;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 300;
+      margin: 15px 0 0;
+      box-sizing: border-box;
+      padding: 0 10%;
+      @include breakpoint(max-width 500px) {
+        padding: 0 2%;
+      }
+    }
+  }
+  &--regist {
+    margin: 0 auto;
+    @include btn--yellow;
+    display: inline-block;
+  }
+}
+
+/*gastro-runner__flexibility*/
+
+/*gastro-runner__foter*/
+
+.gastro-runner__footer {
+  background-color: #1e1e1e;
+  padding: 30px 0;
+  box-sizing: border-box;
+  .gastro-runner__header--mail {
+    margin-top: 10px;
+    @include breakpoint(max-width 500px) {
+      width: 100%;
+      text-align: left;
+    }
+  }
+  &--copyright {
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 60px;
+    color: #fff;
+    float: left;
+    width: calc(100% - (119px+228px));
+    padding-left: 12%;
+    box-sizing: border-box;
+    @include breakpoint(max-width 500px) {
+      width: calc(100% - 119px);
+      text-align: right;
+    }
+  }
+}
+
+/*gastro-runner__foter*/
+
+
+.earnings-gastro__header {
+  background-image: url("../img/fons/earnings-gastro__header.png");
+  background-repeat: no-repeat;
+  height: 781px;
+  width: 100%;
+  float: left;
+  padding-top: 30px;
+  box-sizing: border-box;
+  &--content {
+    float: left;
+    width: 70%;
+  }
+  &--title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    float: left;
+    margin: 0;
+    position: relative;
+    span {
+      color: $yellow;
+    }
+    &:after {
+      content: "";
+      background-image: url("../img/icons/border-yellow.png");
+      position: absolute;
+      width: 88px;
+      height: 116px;
+      background-repeat: no-repeat;
+      right: -140px;
+      top: 18px;
+    }
+  }
+}
