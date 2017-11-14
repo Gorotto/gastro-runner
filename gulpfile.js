@@ -41,6 +41,8 @@ let pages = [
   'app/pug/pages/cooperation/cooperation.pug',
   'app/pug/pages/enter--admin/enter--admin.pug',
   'app/pug/pages/register/register.pug',
+  'app/pug/pages/profile/profile.pug',
+  'app/pug/pages/profile/view-profile.pug',
 
 
 ];

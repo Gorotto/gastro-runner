@@ -1,0 +1,116 @@
+.profile {
+  margin: 100px 0;
+  &--title {
+    width: 100%;
+    float: left;
+    color: $dark;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 25px;
+  }
+  &__wrap {
+    width: 100%;
+    float: left;
+    background-color: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    &--pic {
+      float: left;
+      width: 215px;
+      text-align: center;
+    }
+    &--thumb {
+      float: left;
+      width: 215px;
+      height: 215px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 30px;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &--content {
+      float: left;
+      width: calc(100% - 215px);
+      padding-left: 60px;
+      box-sizing: border-box;
+
+    }
+    &--upload-photo {
+      float: none;
+      display: inline-block;
+      margin: 0 auto;
+      .upload-btn + label {
+        min-width: 156px;
+        height: 50px;
+        background-color: #fff;
+        border: 1px solid #333;
+        border-radius: 3px;
+        outline: none;
+        &:hover {
+          background-color: $dark;
+          color: #fff;
+        }
+      }
+    }
+    &--form {
+      float: left;
+      width: 40%;
+      .enter__form--row {
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
+    }
+    &--button {
+      float: left;
+      width: 140px;
+      height: 50px;
+      background-color: #00a8d7;
+      border-radius: 3px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 50px;
+      color: #fff;
+      text-align: center;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        background-color: #0086ac;
+      }
+    }
+    &--name  {
+      width: 100%;
+      float: left;
+      margin: 0;
+      color: $dark;
+      font-size: 16px;
+      font-weight: 300;
+      text-align: left;
+      padding: 10px 0 15px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #f3f3f3;
+    }
+    &--info-row {
+      width: 60%;
+      float: left;
+      text-align: left;
+      color: #707070;
+      font-size: 14px;
+      font-weight: 700;
+      margin: 20px 0 0 0;
+      span {
+        font-size: 14px;
+        font-weight: 300;
+        color: $dark;
+        width: 50%;
+        float: right;
+        text-align: left;
+      }
+    }
+  }
+}

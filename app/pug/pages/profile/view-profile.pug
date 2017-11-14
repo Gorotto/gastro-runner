@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Предмет
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="css/libs.min.css")
+    link(rel="stylesheet", href="css/styles.css")
+
+  body
+    include ../header
+    section.profile
+      .container
+        h2.profile--title Просмотр профиля дилера
+        .profile__wrap
+          .profile__wrap--pic
+            .profile__wrap--thumb
+              img(src="img/content/photo-2.png")
+          .profile__wrap--content
+            h4.profile__wrap--name Александр Добровольский
+            p.profile__wrap--info-row Email:
+              span dealer_dealer1@gmail.com
+            p.profile__wrap--info-row Телефон:
+              span +38 (097) 478-32-19
+            p.profile__wrap--info-row Зарегистрирован:
+              span 05.10.2017 12:24
+            p.profile__wrap--info-row Последняя активность:
+              span 31.10.2017 22:00
+    include ../footer
+    script(src='js/jquery-2.1.3.min.js') 
+    script(src="js/jquery.mousewheel.js") 
+    script(src="js/script.js")

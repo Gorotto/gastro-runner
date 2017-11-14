@@ -12,24 +12,29 @@
     <header class="header">
       <div class="container">
         <div class="header__logo"><img src="img/logo.png"/></div>
-        <div class="header__panel"><a class="header__panel--enter" href="#">Вход</a><a class="header__panel--reg" href="#">Регистрация</a></div>
+        <ul class="header__menu">
+          <li><a href="#">Главная  </a></li>
+          <li><a href="#">Дилеры</a></li>
+          <li><a href="#">Статистика</a></li>
+          <li><a href="#">История</a></li>
+          <li><a href="#">Профиль</a></li>
+        </ul><a class="header__panel--exit" href="#">Выход</a>
       </div>
     </header>
-    <section class="enter">
+    <section class="profile">
       <div class="container">
-        <div class="enter__form">
-          <h3 class="enter__form--title">Вход</h3>
-          <form method="POST">
-            <div class="enter__form--row">
-              <label class="enter__form--label" for="phone">Телефон</label>
-              <input class="enter__form--input" id="phone" type="text" placeholder="Введите номер телефона"/><span class="enter__form--icon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
-            </div>
-            <div class="enter__form--row">
-              <label class="enter__form--label" for="key">Код</label>
-              <input class="enter__form--input" id="key" type="text" placeholder="Введите код, полученный в смс"/><span class="enter__form--icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-            </div><a class="enter__form--get-code" href="#">Получить код</a>
-            <button class="enter__form--button">Вход</button>
-          </form>
+        <h2 class="profile--title">Просмотр профиля дилера</h2>
+        <div class="profile__wrap">
+          <div class="profile__wrap--pic">
+            <div class="profile__wrap--thumb"><img src="img/content/photo-2.png"/></div>
+          </div>
+          <div class="profile__wrap--content">
+            <h4 class="profile__wrap--name">Александр Добровольский</h4>
+            <p class="profile__wrap--info-row">Email:<span>dealer_dealer1@gmail.com</span></p>
+            <p class="profile__wrap--info-row">Телефон:<span>+38 (097) 478-32-19</span></p>
+            <p class="profile__wrap--info-row">Зарегистрирован:<span>05.10.2017 12:24</span></p>
+            <p class="profile__wrap--info-row">Последняя активность:<span>31.10.2017 22:00</span></p>
+          </div>
         </div>
       </div>
     </section>
