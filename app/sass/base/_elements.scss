@@ -53,7 +53,11 @@ section {
   position: relative;
   float: left;
   display: inline-block;
-    margin-right: 40px;
+  margin-right: 40px;
+  @include breakpoint(max-width 500px) {
+    float: none;
+    margin: 15px 15px 0 15px;
+  }
   label{
     float: left;
     box-sizing: border-box;

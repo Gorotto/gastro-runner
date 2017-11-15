@@ -14,9 +14,18 @@
     float: left;
     background-color: #fff;
     padding: 40px;
+    @include breakpoint(max-width 500px) {
+      padding: 40px 10px;
+    }
     box-sizing: border-box;
     .profile__wrap--form {
       width: 30%;
+      @include breakpoint(max-width 1024px) {
+        width: 50%;
+      }
+      @include breakpoint(max-width 500px) {
+        width: 100%;
+      }
     }
   }
 }

@@ -17,6 +17,9 @@
       float: left;
       border: 1px solid #eaeaea;
       border-radius: 4px;
+      @include breakpoint(max-width 500px) {
+        width: 100%;
+      }
       span {
         width: 54px;
         height: 49px;
@@ -36,6 +39,19 @@
         height: 49px;
         border: none;
         cursor: pointer;
+        @include breakpoint(max-width 500px) {
+          width: calc((100% - 108px)/2);
+        }
+      }
+    }
+    .drop-menu {
+      @include breakpoint(max-width 770px) {
+        float: left;
+        margin-top: 20px;
+        width: 430px;
+      }
+      @include breakpoint(max-width 500px) {
+        width: 100%;
       }
     }
   }
@@ -43,6 +59,39 @@
     width: 100%;
     float: left;
     position: relative;
+    &::-webkit-scrollbar-button {
+      background-image:url('');
+      background-repeat:no-repeat;
+      width:5px;
+      height:0px
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color:#bbb
+    }
+
+    &::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+      background-color:#f3f3f3;
+    }
+
+
+    &::-webkit-resizer{
+      background-image:url('');
+      background-repeat:no-repeat;
+      width:4px;
+      height:0px
+    }
+
+    &::-webkit-scrollbar{
+      width: 4px;
+    }
+    @include breakpoint(max-width 990px) {
+      overflow-x: scroll;
+      padding-bottom: 40px;
+      box-sizing: border-box;
+    }
     &--title {
       float: left;
       width: 100%;
@@ -50,6 +99,9 @@
       border-radius: 3px;
       padding: 20px 0;
       box-sizing: border-box;
+      @include breakpoint(max-width 990px) {
+        width: 970px;
+      }
       span {
         color: #707070;
         font-size: 14px;
@@ -64,6 +116,9 @@
       padding: 20px 0;
       box-sizing: border-box;
       margin-top: 15px;
+      @include breakpoint(max-width 990px) {
+        width: 970px;
+      }
       span {
         color: $dark;
         font-size: 14px;

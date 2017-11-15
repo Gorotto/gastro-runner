@@ -8,6 +8,9 @@
     float: none;
     margin: 100px auto;
     display: inline-block;
+    @include breakpoint(max-width 500px) {
+      width: 100%;
+    }
     &--title {
       width: 100%;
       float: left;
@@ -23,6 +26,10 @@
       font-size: 14px;
       font-weight: 300;
       margin: 30px auto;
+      @include breakpoint(max-width 500px) {
+        width: 100%;
+        margin: 15px 0;
+      }
       &:hover {
         color: $blue;
       }

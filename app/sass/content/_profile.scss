@@ -15,10 +15,18 @@
     background-color: #fff;
     padding: 40px;
     box-sizing: border-box;
+    @include breakpoint(max-width 500px) {
+      padding: 40px 10px;
+    }
     &--pic {
       float: left;
       width: 215px;
       text-align: center;
+      @include breakpoint(max-width 500px) {
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 20px;
+      }
     }
     &--thumb {
       float: left;
@@ -27,6 +35,11 @@
       border-radius: 50%;
       overflow: hidden;
       margin-bottom: 30px;
+      @include breakpoint(max-width 500px) {
+        float: none;
+        display: inline-block;
+        margin: 0 auto 30px;
+      }
       img {
         object-fit: cover;
         width: 100%;
@@ -38,7 +51,10 @@
       width: calc(100% - 215px);
       padding-left: 60px;
       box-sizing: border-box;
-
+      @include breakpoint(max-width 500px) {
+        width: 100%;
+        padding: 0 10px;
+      }
     }
     &--upload-photo {
       float: none;
@@ -60,6 +76,15 @@
     &--form {
       float: left;
       width: 40%;
+      @include breakpoint(max-width 1200px) {
+        width: 60%;
+      }
+      @include breakpoint(max-width 950px) {
+        width: 90%;
+      }
+      @include breakpoint(max-width 500px) {
+        width: 100%;
+      }
       .enter__form--row {
         margin-top: 0;
         margin-bottom: 30px;
@@ -103,6 +128,9 @@
       font-size: 14px;
       font-weight: 700;
       margin: 20px 0 0 0;
+      @include breakpoint(max-width 1200px) {
+        width: 100%;
+      }
       span {
         font-size: 14px;
         font-weight: 300;
