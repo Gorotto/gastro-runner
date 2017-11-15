@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Предмет
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="css/libs.min.css")
+    link(rel="stylesheet", href="css/styles.css")
+
+  body
+    include ../header
+    section.add-dealer
+      .container
+        h2.add-dealer--title Мои настойки
+        .add-dealer__wrap
+          form(method='POST').profile__wrap--form
+            .enter__form--row
+              label(for='sum').enter__form--label Сумма доставки
+              input#sum.enter__form--input(type="text", placeholder="Введите сумму доставки")
+              span.enter__form--icon
+                i.fa.fa-money(aria-hidden='true')
+            button.profile__wrap--button
+              | Сохранить
+    include ../footer
+    script(src='js/jquery-2.1.3.min.js') 
+    script(src="js/jquery.mousewheel.js") 
+    script(src="js/script.js")

@@ -1,0 +1,113 @@
+.list-dealer {
+  margin: 100px 0;
+  &--title {
+    width: 50%;
+    float: left;
+    color: $dark;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 15px 0 25px;
+  }
+  .add-btn {
+    float: right;
+    margin-bottom: 25px;
+  }
+  &__table {
+    width: 100%;
+    float: left;
+    position: relative;
+    &--title {
+      float: left;
+      width: 100%;
+      background-color: #f3f3f3;
+      border-radius: 3px;
+      padding: 20px 0;
+      box-sizing: border-box;
+      span {
+        color: #707070;
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+    &--row {
+      float: left;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 3px;
+      padding: 20px 0;
+      box-sizing: border-box;
+      margin-top: 15px;
+      span {
+        color: $dark;
+        font-size: 14px;
+        font-weight: 300;
+        height: 68px;
+        align-items: center;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flex;
+        display: inline-flex;
+        flex-flow: row wrap;
+      }
+      .action {
+        width: 14%;
+        padding-right: 20px;
+        box-sizing: border-box;
+        float: left;
+        height: 68px;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flex;
+        display: inline-flex;
+        flex-flow: row wrap;
+        align-items: center;
+        .del--btn  {
+          margin-left: 22px;
+        }
+      }
+    }
+    span {
+      float: left;
+      text-align: left;
+    }
+    .photo {
+      width: 68px;
+      margin-left: 35px;
+      box-sizing: border-box;
+      margin-right: 50px;
+      text-align: center;
+      &--thumb {
+        height: 68px;
+        width: 68px;
+        border-radius: 50%;
+        overflow: hidden;
+        float: left;
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .name {
+      width: 18%;
+    }
+    .email {
+      width: 18%;
+    }
+    .phone {
+      width: 18%;
+    }
+    .date {
+      width: 18%;
+    }
+    .action {
+      width: 14%;
+      padding-right: 20px;
+      box-sizing: border-box;
+      float: left;
+      .del--btn  {
+        margin-left: 22px;
+      }
+    }
+  }
+}

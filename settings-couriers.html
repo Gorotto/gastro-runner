@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Предмет</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/libs.min.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo"><img src="img/logo.png"/></div>
+        <ul class="header__menu">
+          <li><a href="#">Главная  </a></li>
+          <li><a href="#">Дилеры</a></li>
+          <li><a href="#">Статистика</a></li>
+          <li><a href="#">История</a></li>
+          <li><a href="#">Профиль</a></li>
+        </ul><a class="header__panel--exit" href="#">Выход</a>
+      </div>
+    </header>
+    <section class="add-dealer">
+      <div class="container">
+        <h2 class="add-dealer--title">Мои настойки</h2>
+        <div class="add-dealer__wrap">
+          <form class="profile__wrap--form" method="POST">
+            <div class="enter__form--row">
+              <label class="enter__form--label" for="sum">Сумма доставки</label>
+              <input class="enter__form--input" id="sum" type="text" placeholder="Введите сумму доставки"/><span class="enter__form--icon"><i class="fa fa-money" aria-hidden="true"></i></span>
+            </div>
+            <button class="profile__wrap--button">Сохранить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="gastro-runner__footer">
+      <div class="container">
+        <div class="gastro-runner__header--logo"><img src="img/logo.png"/></div>
+        <p class="gastro-runner__footer--copyright">Gastro Runner © 2017</p><a class="gastro-runner__header--mail" href="mailto:office@gastrotochka.com"><span class="circle-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>office@gastrotochka.com</a>
+      </div>
+    </section>
+    <script src="js/jquery-2.1.3.min.js"> </script>
+    <script src="js/jquery.mousewheel.js"> </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

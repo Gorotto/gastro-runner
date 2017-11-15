@@ -1,0 +1,97 @@
+.history {
+  margin: 100px 0;
+  &--title {
+    width: 100%;
+    float: left;
+    color: $dark;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 25px;
+  }
+  &__panel {
+    width: 100%;
+    float: left;
+    margin-bottom: 25px;
+    &--date {
+      float: left;
+      border: 1px solid #eaeaea;
+      border-radius: 4px;
+      span {
+        width: 54px;
+        height: 49px;
+        background-color: #f3f3f3;
+        float: left;
+        text-align: center;
+        line-height: 49px;
+        color: $dark;
+        font-size: 14px;
+        font-weight: 300;
+      }
+      input {
+        float: left;
+        text-align: center;
+        background-color: #fff;
+        width: 160px;
+        height: 49px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+  &__table {
+    width: 100%;
+    float: left;
+    position: relative;
+    &--title {
+      float: left;
+      width: 100%;
+      background-color: #f3f3f3;
+      border-radius: 3px;
+      padding: 20px 0;
+      box-sizing: border-box;
+      span {
+        color: #707070;
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+    &--row {
+      float: left;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 3px;
+      padding: 20px 0;
+      box-sizing: border-box;
+      margin-top: 15px;
+      span {
+        color: $dark;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+    span {
+      float: left;
+      text-align: left;
+    }
+    .number {
+      width: 15%;
+      padding-left: 35px;
+      box-sizing: border-box;
+    }
+    .date {
+      width: 20%;
+    }
+    .adress {
+      width: 25%;
+    }
+    .product {
+      width: 25%;
+    }
+    .status {
+      width: 15%;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+  }
+}

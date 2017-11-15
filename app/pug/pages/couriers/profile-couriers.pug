@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Предмет
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="css/libs.min.css")
+    link(rel="stylesheet", href="css/styles.css")
+
+  body
+    include ../header
+    section.profile
+      .container
+        h2.profile--title Мой профиль
+        .profile__wrap
+          .profile__wrap--pic
+            .profile__wrap--thumb
+              img(src="img/content/photo-1.png")
+            .profile__wrap--upload-photo
+              input#file.upload-btn(type='file', name='file')
+              label(for='file') 
+                | Загрузить фото
+          .profile__wrap--content
+            form(method='POST').profile__wrap--form
+              .enter__form--row
+                label(for='name').enter__form--label Имя
+                input#name.enter__form--input(type="text", placeholder="Введите имя и фамилию")
+                span.enter__form--icon
+                  i.fa.fa-user-o(aria-hidden='true')
+              .enter__form--row
+                label(for='email').enter__form--label Email
+                input#email.enter__form--input(type="text", placeholder="Введите email")
+                span.enter__form--icon
+                  i.fa.fa-envelope-o(aria-hidden='true')
+              .enter__form--row
+                label(for='phone').enter__form--label Телефон
+                input#phone.enter__form--input(type="text", placeholder="Введите номер телефона")
+                span.enter__form--icon
+                  i.fa.fa-mobile(aria-hidden='true')
+              .enter__form--row
+                      label(for='phone').enter__form--label Город
+                      .drop-menu
+                        .select
+                          i.fa.fa-map-marker(aria-hidden='true')
+                          span Выберите город
+                          i.fa.fa-chevron-down      
+                          input(type='hidden', name='gender')      
+                        ul.dropeddown
+                          li#city1 Краматорск       
+                          li#city2 Киев
+                          li#city3 Харьков
+                          li#city4 Одесса
+                          li#city5 Днепр
+                          li#city6 Донецк
+                          li#city7 Ужгород
+                          li#city8 Луцк
+                          li#city9 Тернополь
+                          li#city10 Ровно
+              button.profile__wrap--button
+                | Сохранить
+    include ../footer
+    script(src='js/jquery-2.1.3.min.js') 
+    script(src="js/jquery.mousewheel.js") 
+    script(src="js/script.js")

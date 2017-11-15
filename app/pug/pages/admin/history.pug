@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Предмет
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="css/libs.min.css")
+    link(rel="stylesheet", href="css/jquery.datetimepicker.css")
+    link(rel="stylesheet", href="css/styles.css")
+
+  body
+    include ../header
+    section.history
+      .container
+        h2.history--title История заказов
+        .history__panel
+          .history__panel--date
+            span c
+            input(type="text").datepicker-inner
+            span до
+            input(type="text").datepicker-inner
+          .drop-menu
+            .select
+              span Все    
+              i.fa.fa-chevron-down      
+              input(type='hidden', name='option')      
+              ul.dropeddown
+                li#option-1 Все1      
+                li#option-2 Все2
+        .history__table
+          .history__table--title
+            span.number № заказа
+            span.date Дата
+            span.adress Адрес
+            span.product Товары 
+            span.status Статус
+          .history__table--row
+            span.number 8051423
+            span.date 05.10.2017 12:24
+            span.adress Киев, Луначарского 25, кв. 123
+            span.product Яблочный штрудель
+            span.status Проведен успешно
+          .history__table--row
+            span.number 8051423
+            span.date 05.10.2017 12:24
+            span.adress Киев, Луначарского 25, кв. 123
+            span.product Яблочный штрудель
+            span.status Проведен успешно
+          .history__table--row
+            span.number 8051423
+            span.date 05.10.2017 12:24
+            span.adress Киев, Луначарского 25, кв. 123
+            span.product Яблочный штрудель
+            span.status Проведен успешно
+          .history__table--row
+            span.number 8051423
+            span.date 05.10.2017 12:24
+            span.adress Киев, Луначарского 25, кв. 123
+            span.product Яблочный штрудель
+            span.status Проведен успешно
+          .history__table--row
+            span.number 8051423
+            span.date 05.10.2017 12:24
+            span.adress Киев, Луначарского 25, кв. 123
+            span.product Яблочный штрудель
+            span.status Проведен успешно
+    include ../footer
+    script(src='js/jquery-2.1.3.min.js') 
+    script(src="js/jquery.mousewheel.js") 
+    script(src="js/jquery.datetimepicker.full.min.js") 
+    script(src="js/script.js")

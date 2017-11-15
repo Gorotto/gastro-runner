@@ -43,6 +43,13 @@ let pages = [
   'app/pug/pages/register/register.pug',
   'app/pug/pages/profile/profile.pug',
   'app/pug/pages/profile/view-profile.pug',
+  'app/pug/pages/admin/history.pug',
+  'app/pug/pages/admin/add-dealer.pug',
+  'app/pug/pages/admin/list-dealer.pug',
+  'app/pug/pages/couriers/list-couriers.pug',
+  'app/pug/pages/couriers/profile-couriers.pug',
+  'app/pug/pages/couriers/add-couriers.pug',
+  'app/pug/pages/couriers/settings-couriers.pug',
 
 
 ];

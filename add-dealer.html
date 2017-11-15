@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Предмет</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/libs.min.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo"><img src="img/logo.png"/></div>
+        <ul class="header__menu">
+          <li><a href="#">Главная  </a></li>
+          <li><a href="#">Дилеры</a></li>
+          <li><a href="#">Статистика</a></li>
+          <li><a href="#">История</a></li>
+          <li><a href="#">Профиль</a></li>
+        </ul><a class="header__panel--exit" href="#">Выход</a>
+      </div>
+    </header>
+    <section class="add-dealer">
+      <div class="container">
+        <h2 class="add-dealer--title">Добавить дилера</h2>
+        <div class="add-dealer__wrap">
+          <form class="profile__wrap--form" method="POST">
+            <div class="enter__form--row">
+              <label class="enter__form--label" for="name">Имя<span>*</span></label>
+              <input class="enter__form--input" id="name" type="text" placeholder="Введите ваше имя"/><span class="enter__form--icon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+            </div>
+            <div class="enter__form--row">
+              <label class="enter__form--label" for="email">Email<span>*</span></label>
+              <input class="enter__form--input" id="email" type="text" placeholder="Введите ваш email"/><span class="enter__form--icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+            </div>
+            <div class="enter__form--row">
+              <label class="enter__form--label" for="phone">Телефон<span>*</span></label>
+              <input class="enter__form--input" id="phone" type="text" placeholder="Введите номер телефона"/><span class="enter__form--icon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+            </div>
+            <div class="enter__form--row">
+              <label class="enter__form--label" for="phone">Город</label>
+              <div class="drop-menu">
+                <div class="select"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Выберите город</span><i class="fa fa-chevron-down">     </i>
+                  <input type="hidden" name="gender"/>
+                </div>
+                <ul class="dropeddown">
+                  <li id="city1">Краматорск       </li>
+                  <li id="city2">Киев</li>
+                  <li id="city3">Харьков</li>
+                  <li id="city4">Одесса</li>
+                  <li id="city5">Днепр</li>
+                  <li id="city6">Донецк</li>
+                  <li id="city7">Ужгород</li>
+                  <li id="city8">Луцк</li>
+                  <li id="city9">Тернополь</li>
+                  <li id="city10">Ровно</li>
+                </ul>
+              </div>
+            </div>
+            <button class="profile__wrap--button">Сохранить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="gastro-runner__footer">
+      <div class="container">
+        <div class="gastro-runner__header--logo"><img src="img/logo.png"/></div>
+        <p class="gastro-runner__footer--copyright">Gastro Runner © 2017</p><a class="gastro-runner__header--mail" href="mailto:office@gastrotochka.com"><span class="circle-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>office@gastrotochka.com</a>
+      </div>
+    </section>
+    <script src="js/jquery-2.1.3.min.js"> </script>
+    <script src="js/jquery.mousewheel.js"> </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

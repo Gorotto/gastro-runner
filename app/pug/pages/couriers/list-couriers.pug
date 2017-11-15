@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Предмет
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="css/libs.min.css")
+    link(rel="stylesheet", href="css/jquery.datetimepicker.css")
+    link(rel="stylesheet", href="css/styles.css")
+
+  body
+    include ../header
+    section.list-dealer
+      .container
+        h2.list-dealer--title Список курьеров
+        a(href="#").add-btn Добавить
+        .list-dealer__table
+          .list-dealer__table--title
+            span.photo Фото 
+            span.name Имя
+            span.email Email    
+            span.phone Телефон
+            span.date Зарегистрирован                   
+            span.action Действия                   
+          .list-dealer__table--row
+            .photo.photo--thumb
+              img(src="img/content/photo-1.png") 
+            span.name Андрей Садовый
+            span.email dealer@site.com
+            span.phone +38 (096) 478-22-19
+            span.date 05.10.2017 12:24                
+            .action 
+              a(href="#").view--btn
+              a(href="#").del--btn
+          .list-dealer__table--row
+            .photo.photo--thumb
+              img(src="img/content/photo-1.png") 
+            span.name Андрей Садовый
+            span.email dealer@site.com
+            span.phone +38 (096) 478-22-19
+            span.date 05.10.2017 12:24                
+            .action 
+              a(href="#").view--btn
+              a(href="#").del--btn
+          .list-dealer__table--row
+            .photo.photo--thumb
+              img(src="img/content/photo-1.png") 
+            span.name Андрей Садовый
+            span.email dealer@site.com
+            span.phone +38 (096) 478-22-19
+            span.date 05.10.2017 12:24                
+            .action 
+              a(href="#").view--btn
+              a(href="#").del--btn
+          .list-dealer__table--row
+            .photo.photo--thumb
+              img(src="img/content/photo-1.png") 
+            span.name Андрей Садовый
+            span.email dealer@site.com
+            span.phone +38 (096) 478-22-19
+            span.date 05.10.2017 12:24                
+            .action 
+              a(href="#").view--btn
+              a(href="#").del--btn
+          .list-dealer__table--row
+            .photo.photo--thumb
+              img(src="img/content/photo-1.png") 
+            span.name Андрей Садовый
+            span.email dealer@site.com
+            span.phone +38 (096) 478-22-19
+            span.date 05.10.2017 12:24                
+            .action 
+              a(href="#").view--btn
+              a(href="#").del--btn
+    include ../footer
+    script(src='js/jquery-2.1.3.min.js') 
+    script(src="js/jquery.mousewheel.js") 
+    script(src="js/jquery.datetimepicker.full.min.js") 
+    script(src="js/script.js")

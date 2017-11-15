@@ -1,0 +1,22 @@
+.add-dealer {
+  margin: 100px 0;
+  &--title {
+    width: 100%;
+    float: left;
+    color: $dark;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 25px;
+  }
+  &__wrap {
+    width: 100%;
+    float: left;
+    background-color: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    .profile__wrap--form {
+      width: 30%;
+    }
+  }
+}
