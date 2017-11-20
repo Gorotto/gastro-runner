@@ -1,0 +1,145 @@
+
+
+
+.modal_div {
+	width: 540px;
+	background: #fff;
+	position: absolute;
+	left: calc(50% - (540px/2));
+	top: calc(50% - (250px/2));
+  border-radius: 3px;
+	display: none;
+	opacity: 0;
+	z-index: 5;
+  @include breakpoint(max-width 500px) {
+    width: 100%;
+    left: 0;
+    top: 30%;
+  }
+	&--photo {
+		top: calc(50% - (480px/2));
+	}
+}
+
+
+#overlay {
+	z-index:3;
+	position:fixed;
+	background-color:#000;
+	opacity:0.8;
+	-moz-opacity:0.8;
+	filter:alpha(opacity=80);
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	cursor:pointer;
+	display:none;
+}
+
+.modal--title {
+  float: left;
+  width: 100%;
+  padding: 25px 30px;
+  background-color: #f0f0f0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px;
+  margin-top: 2px;
+  z-index: 10;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  &:before,
+  &:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 20px;
+    width: 2px;
+    background-color: #333;
+  }
+  &:before {
+  transform: rotate(45deg);
+  }
+  &:after {
+  transform: rotate(-45deg);
+  }
+}
+.modal--content {
+  float: left;
+  width: 100%;
+  padding: 35px;
+  box-sizing: border-box;
+  text-align: center;
+  p {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .ok-btn {
+    width: 112px;
+    height: 50px;
+    background-color: #00a8d7;
+    border-radius: 3px;
+    float: none;
+    margin: auto;
+    display: inline-block;
+    line-height: 50px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    &:hover {
+      background-color: #0086ac;
+    }
+  }
+	.modal__thumb {
+		width: 220px;
+		height: 220px;
+		float: none;
+		display: inline-block;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.crop-btn {
+	width: 156px;
+	height: 50px;
+	background-color: #00a8d7;
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 50px;
+	color: #fff;
+	display: inline-block;
+	position: relative;
+	top: -1px;
+	margin-left: 15px;
+	&:hover {
+		background-color: #0086ac;
+		color: #fff;
+	}
+}
+.modal__panel {
+	width: 100%;
+	float: left;
+	position: relative;
+	margin-top: 20px;
+	.profile__wrap--upload-photo {
+		margin-right: 15px;
+	}
+}

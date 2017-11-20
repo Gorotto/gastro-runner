@@ -18,7 +18,8 @@
           <li><a href="#">Статистика</a></li>
           <li><a href="#">История</a></li>
           <li><a href="#">Профиль</a></li>
-        </ul><a class="header__panel--exit" href="#">Выход</a>
+        </ul>
+        <div class="toggle_mnu"><span class="sandwich"><span class="sw-topper"></span>              <span class="sw-bottom"></span>              <span class="sw-footer"></span></span></div><a class="header__panel--exit" href="#">Выход</a>
       </div>
     </header>
     <section class="profile">
@@ -26,12 +27,7 @@
         <h2 class="profile--title">Мой профиль</h2>
         <div class="profile__wrap">
           <div class="profile__wrap--pic">
-            <div class="profile__wrap--thumb"><img src="img/content/photo-1.png"/></div>
-            <div class="profile__wrap--upload-photo">
-              <input class="upload-btn" id="file" type="file" name="file"/>
-              <label for="file">
-                 Загрузить фото</label>
-            </div>
+            <div class="profile__wrap--thumb"><img src="img/content/photo-1.png"/></div><a class="uploads-btn open_modal" href="#modal2">Загрузить фото</a>
           </div>
           <div class="profile__wrap--content">
             <form class="profile__wrap--form" method="POST">
@@ -59,6 +55,26 @@
         <p class="gastro-runner__footer--copyright">Gastro Runner © 2017</p><a class="gastro-runner__header--mail" href="mailto:office@gastrotochka.com"><span class="circle-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>office@gastrotochka.com</a>
       </div>
     </section>
+    <div class="modal_div" id="modal1">
+      <div class="modal--title">Сообщение<span class="modal_close close-btn"></span></div>
+      <div class="modal--content">
+        <p>На указанный номер отправлен код авторизации</p><a class="modal_close ok-btn" href="#"> ОК</a>
+      </div>
+    </div>
+    <div class="modal_div modal_div--photo" id="modal2">
+      <div class="modal--title">Загрузка фото<span class="modal_close close-btn"></span></div>
+      <div class="modal--content">
+        <div class="modal__thumb"><img src="img/content/photo-1.png"/></div>
+        <div class="modal__panel">
+          <div class="profile__wrap--upload-photo">
+            <input class="upload-btn" id="file" type="file" name="file"/>
+            <label for="file">
+               Выберите файл</label>
+          </div><a class="crop-btn" href="#">Обрезать</a>
+        </div>
+      </div>
+    </div>
+    <div id="overlay"></div>
     <script src="js/jquery-2.1.3.min.js"> </script>
     <script src="js/jquery.mousewheel.js"> </script>
     <script src="js/script.js"></script>

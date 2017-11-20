@@ -15,10 +15,28 @@
     float: left;
     margin: 12px 0 0 45px;
     padding: 0;
+    @include breakpoint(max-width 1000px) {
+      display: none;
+      position: absolute;
+      right: 12px;
+      width: 97%;
+      background-color: #fff;
+      z-index: 100;
+      margin: 75px 0 0 0;
+      text-align: center;
+    }
     li {
       display: inline-block;
       list-style-type: none;
       margin: 0 0 0 45px;
+      @include breakpoint(max-width 1000px) {
+        width: 100%;
+        float: left;
+        margin: 10px 0;
+        padding: 0 10px;
+        box-sizing: border-box;
+
+      }
       a {
         font-size: 16px;
         font-weight: 300;
@@ -33,6 +51,9 @@
     width: 273px;
     float: right;
     text-align: right;
+    @include breakpoint(max-width 500px) {
+      width: calc(100% - 120px);
+    }
     &--enter {
       float: none;
       display: inline-block;
@@ -48,6 +69,7 @@
       padding-left: 10px;
       box-sizing: border-box;
       position: relative;
+
       &:before {
         content: "";
         background-repeat: no-repeat;
@@ -109,10 +131,98 @@
       line-height: 44px;
       color: $dark;
       margin-left: 22px;
+      @include breakpoint(max-width 500px) {
+        width: 110px;
+        margin-left: 8px;
+      }
       &:hover {
         background-color: $dark;
         color: #fff;
       }
     }
   }
+}
+
+
+.toggle_mnu {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  z-index: 3;
+  border: none;
+  right: 10px;
+  float: right;
+  margin-left: 20px;
+  // top: 40px;
+  background-color: transparent;
+  @include breakpoint(max-width 1000px) {
+    display: block;
+  }
+  span {
+    display: block;
+   }
+}
+
+.sandwich {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 200;
+ }
+
+.sw-topper {
+  position: relative;
+  top: 0;
+  width: 40px;
+  height: 4px;
+  background: $dark;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: transform 0.5s, top 0.2s;
+  display: block;
+}
+
+.sw-bottom {
+  position: relative;
+  width: 40px;
+  height: 4px;
+  top: 6.6px;
+  background: $dark;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: transform 0.5s, top 0.2s;
+  transition-delay: 0.2s, 0;
+}
+
+.sw-footer {
+  position: relative;
+  width: 40px;
+  height: 4px;
+  top: 13.5px;
+  background: $dark;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: all 0.5s;
+  transition-delay: 0.1s;
+}
+
+.sandwich.active .sw-topper {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+.sandwich.active .sw-bottom {
+  top: 6px;
+  transform: rotate(45deg);
+}
+.sandwich.active .sw-footer {
+  opacity: 0;
+  top: 0;
+  transform: rotate(180deg);
 }

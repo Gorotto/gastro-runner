@@ -17,10 +17,7 @@ html(lang="ru")
           .profile__wrap--pic
             .profile__wrap--thumb
               img(src="img/content/photo-1.png")
-            .profile__wrap--upload-photo
-              input#file.upload-btn(type='file', name='file')
-              label(for='file') 
-                | Загрузить фото
+            a(href="#modal2").uploads-btn.open_modal Загрузить фото
           .profile__wrap--content
             form(method='POST').profile__wrap--form
               .enter__form--row

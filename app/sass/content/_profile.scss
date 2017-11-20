@@ -1,5 +1,6 @@
 .profile {
-  margin: 100px 0;
+  margin: 50px 0 100px;
+  flex: 1 0 auto;
   &--title {
     width: 100%;
     float: left;
@@ -26,6 +27,23 @@
         width: 100%;
         padding: 0 10px;
         margin-bottom: 20px;
+      }
+      .uploads-btn {
+        width: 156px;
+        height: 50px;
+        background-color: #fff;
+        border: 1px solid #333;
+        border-radius: 3px;
+        outline: none;
+        display: inline-block;
+        line-height: 50px;
+        font-size: 14px;
+        font-weight: 400;
+        color: $dark;
+        &:hover {
+          background-color: $dark;
+          color: #fff;
+        }
       }
     }
     &--thumb {
@@ -73,6 +91,7 @@
         }
       }
     }
+
     &--form {
       float: left;
       width: 40%;

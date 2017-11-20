@@ -7,3 +7,24 @@ section.gastro-runner__footer
       span.circle-icon
         i.fa.fa-envelope-o(aria-hidden='true')
       | office@gastrotochka.com
+#modal1.modal_div
+  .modal--title
+    | Сообщение
+    span.modal_close.close-btn
+  .modal--content
+    p На указанный номер отправлен код авторизации
+    a(href="#").modal_close.ok-btn  ОК
+#modal2.modal_div.modal_div--photo
+  .modal--title
+    | Загрузка фото
+    span.modal_close.close-btn
+  .modal--content
+    .modal__thumb
+      img(src="img/content/photo-1.png")
+    .modal__panel
+      .profile__wrap--upload-photo
+        input#file.upload-btn(type='file', name='file')
+        label(for='file') 
+          | Выберите файл
+      a(href="#").crop-btn Обрезать
+#overlay

@@ -1,0 +1,19 @@
+.maps {
+  margin: 50px 0 100px;
+  flex: 1 0 auto;
+  &--title {
+    width: 50%;
+    float: left;
+    color: $dark;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 15px 0 25px;
+  }
+}
+#map {
+  width: 100%;
+  height: 530px;
+  float: left;
+  position: relative;
+}

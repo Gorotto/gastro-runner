@@ -28,6 +28,9 @@
     border-radius: 5px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
     text-align: center;
+    @include breakpoint(max-width 1200px) {
+      width: 100%;
+    }
     &--item {
       width: 284px;
       height: 264px;
@@ -40,6 +43,18 @@
       display: inline-block;
       margin: 0 1% 45px;
       position: relative;
+      @include breakpoint(max-width 1200px) {
+        width: 30%;
+        float: left;
+        height: 350px;
+      }
+      @include breakpoint(max-width 500px) {
+        width: 100%;
+        float: left;
+        margin: 10px 0;
+        text-align: center;
+        height: 300px;
+      }
       cursor: pointer;
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
@@ -102,6 +117,12 @@
       position: absolute;
       bottom: 35px;
       left: 35px;
+      @include breakpoint(max-width 1200px) {
+        min-width: 100%;
+        left: 0;
+        // position: relative;
+
+      }
     }
 
   }

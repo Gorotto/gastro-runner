@@ -25,7 +25,24 @@ html(lang="ru")
             br
             | с 
             span Gastro Runner
-            
+          .annotation
+            span.dishes--icon
+            span.annotation--text Сервис доставки продуктов питания
+        .earnings-gastro__regist
+          span.earnings-gastro__regist--title Регистрация курьера
+          .earnings-gastro__regist--row
+            i.fa.fa-user-o(aria-hidden='true')
+            input(type="text" placeholder="Ваше имя")
+          .earnings-gastro__regist--row
+            i.fa.fa-mobile(aria-hidden='true')
+            input(type="text" placeholder="Ваш телефон")
+          .earnings-gastro__regist--row
+            i.fa.fa-map-marker(aria-hidden='true')
+            input(type="text" placeholder="Ваш город")
+          button.earnings-gastro__regist--button Отправить заявку
+          p.earnings-gastro__regist--text
+            span.lock--icon
+            | Ваши данные в безопасности
     section.gastro-runner__advantages.earnings-gastro__advantages
       .container
         .gastro-runner__advantages--item

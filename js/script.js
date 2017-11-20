@@ -1,4 +1,26 @@
+
+
+  if ($('#map').length > 0) {
+  google.maps.event.addDomListener(window, 'load', init);
+  function init() {
+      var mapOptions = {
+
+          zoom: 15,
+          center: new google.maps.LatLng(49.234728, 28.466794),
+          styles: [{"featureType":"administrative.neighborhood","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"administrative.neighborhood","elementType":"labels.icon","stylers":[{"visibility":"on"}]}]
+      };
+      var mapElement = document.getElementById('map');
+      var map = new google.maps.Map(mapElement, mapOptions);
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(49.234728, 28.466794),
+          map: map,
+          title: 'Snazzy!'
+      });
+  }
+  }
+
 $(document).ready(function(){
+
   /*spoiler*/
   $(".faq__item--title").click(function (event) {
       $(this).next(".faq__item--hide").slideToggle();
@@ -39,5 +61,59 @@ $(document).ready(function(){
           $(this).parents('.drop-menu').find('input').attr('value', $(this).attr('id'));
       });
   /*End Select Box js*/
+
+
+
+  /*modal*/
+  var overlay = $('#overlay');
+   var open_modal = $('.open_modal');
+   var close = $('.modal_close, #overlay');
+   var modal = $('.modal_div');
+
+    open_modal.click( function(event){
+        event.preventDefault();
+        var div = $(this).attr('href');
+        overlay.fadeIn(400,
+            function(){
+                $(div)
+                    .css('display', 'block')
+                    .animate({opacity: 1}, 200);
+        });
+    });
+
+    close.click( function(){
+           modal // все модальные окна
+            .animate({opacity: 0}, 200,
+                function(){
+                    $(this).css('display', 'none');
+                    overlay.fadeOut(400); 
+                }
+            );
+    })
+
+  /*modal*/
+
+  var windowWidth = $(window).width();
+
+  $(".toggle_mnu").click(function () {
+      $(".sandwich").toggleClass("active");
+  });
+
+  if (windowWidth < 1000) {
+      $(".header__menu ul a").click(function () {
+          $(".header__menu").fadeOut(500);
+          $(".sandwich").toggleClass("active").append("<span>");
+      });
+
+      $(".toggle_mnu").click(function () {
+          if ($(".header__menu").is(":visible")) {
+              $(".header__menu").fadeOut(500);
+              $(".header__menu li a").removeClass("fadeInUp animated");
+          } else {
+              $(".header__menu").fadeIn(500);
+              $(".header__menu li a").addClass("fadeInUp animated");
+          }
+      });
+  }
 
 });

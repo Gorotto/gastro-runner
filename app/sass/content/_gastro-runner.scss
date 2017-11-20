@@ -142,6 +142,9 @@
     margin: 0;
     padding: 0 1%;
     box-sizing: border-box;
+    @include breakpoint(max-width 500px) {
+      width: 50%;
+    }
   }
 }
 
@@ -294,6 +297,7 @@
 .gastro-runner__footer {
   background-color: #1e1e1e;
   padding: 30px 0;
+  flex: 0 0 auto;
   box-sizing: border-box;
   .gastro-runner__header--mail {
     margin-top: 10px;
@@ -331,9 +335,25 @@
   float: left;
   padding-top: 30px;
   box-sizing: border-box;
+  @include breakpoint(max-width 1000px) {
+    height: auto;
+    padding-bottom: 20px;
+    text-align: center;
+  }
   &--content {
     float: left;
     width: 70%;
+    position: absolute;
+    left: 0;
+    top: 200px;
+    @include breakpoint(max-width 1000px) {
+      position: relative;
+      top: 20px;
+      text-align: left;
+    }
+    @include breakpoint(max-width 500px) {
+      width: 100%;
+    }
   }
   &--title {
     font-size: 36px;
@@ -356,6 +376,168 @@
       background-repeat: no-repeat;
       right: -140px;
       top: 18px;
+      @include breakpoint(max-width 500px) {
+        display: none;
+      }
     }
+  }
+}
+
+
+.earnings-gastro__regist {
+  width: 378px;
+  height: 432px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 45px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  top: 150px;
+  @include breakpoint(max-width 1000px) {
+    position: relative;
+    margin: 40px auto 0;
+    display: inline-block;
+  }
+  @include breakpoint(max-width 500px) {
+    width: 100%;
+  }
+  &--title  {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+  }
+  &--row {
+    width: 100%;
+    float: left;
+    height: 56px;
+    position: relative;
+    margin-bottom: 20px;
+    &:after {
+      content: "";
+      background-image: url("../img/icons/border-line.png");
+      width: 100%;
+      background-repeat: no-repeat;
+      height: 56px;
+      position: absolute;
+      left: 3px;
+      bottom: -43px;
+    }
+    input {
+      width: 288px;
+      float: left;
+      background: transparent;
+      border: none;
+      padding-left: 47px;
+      box-sizing: border-box;
+      height: 56px;
+      line-height: 56px;
+      color: #fff;
+      position: relative;
+      z-index: 16;
+      &::placeholder {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        opacity: 1;
+      }
+    }
+  }
+  i {
+    font-size: 14px;
+    color: #fefefe;
+    position: absolute;
+    left: 22px;
+    top: 22px;
+  }
+  .fa-mobile {
+    font-size: 20px;
+    top: 18px;
+  }
+  .fa-map-marker {
+    font-size: 17px;
+    top: 19px;
+  }
+  &--button {
+    width: 100%;
+    float: left;
+    height: 63px;
+    background-color: #f2b71b;
+    border-radius: 5px;
+    text-align: center;
+    color: #1c1c1c;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+      background-color: #d69b00;
+    }
+  }
+  &--text {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 0;
+    position: relative;
+    .lock--icon {
+      width: 12px;
+      height: 18px;
+      background-image: url("../img/icons/lock.png");
+      position: absolute;
+      display: block;
+      left: 15px;
+      top: 3px;
+    }
+  }
+}
+.annotation {
+  float: left;
+  width: 472px;
+  height: 72px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 35px;
+  margin-top: 30px;
+  @include breakpoint(max-width 500px) {
+    width: 100%;
+  }
+  &--text {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 72px;
+    color: #fff;
+    float: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+    width: calc(100% - 72px);
+    @include breakpoint(max-width 500px) {
+      line-height: 30px;
+      font-size: 18px;
+    }
+  }
+}
+.dishes--icon {
+  width: 72px;
+  height: 72px;
+  background-color: #1e1e1e;
+  border-radius: 50%;
+  float: left;
+  text-align: center;
+  &:after {
+    content: "";
+    background-image: url("../img/icons/dishes--icon.png");
+    width: 30px;
+    height: 28px;
+    position: relative;
+    display: inline-block;
+    top: calc(50% - 14px);
   }
 }
